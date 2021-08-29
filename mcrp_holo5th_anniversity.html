@@ -38,11 +38,36 @@
   <nav class="navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
     <div class="container">
 
-      <!-- Brand -->
+      <!-- Temp svg -->
+      <div style="display:none" >
+        <svg id="feather-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+            <path d="M2410 5114 c-14 -3 -56 -15 -95 -26 -239 -70 -446 -256 -543 -490
+    -65 -157 -63 -88 -60 -1633 l3 -1400 29 -65 c27 -59 62 -98 378 -415 l348
+    -351 0 -319 c0 -330 6 -387 40 -405 24 -13 76 -13 100 0 34 18 40 75 40 405
+    l0 319 348 351 c316 317 351 356 378 415 l29 65 3 1400 c2 1252 1 1408 -14
+    1480 -60 301 -286 549 -589 645 -56 18 -99 23 -220 25 -82 2 -161 1 -175 -1z
+    m368 -197 c201 -72 354 -225 430 -429 l27 -73 3 -655 2 -655 -295 -295 -295
+    -295 0 135 0 134 210 211 c183 184 210 215 210 242 0 45 -9 62 -41 78 -55 29
+    -65 22 -225 -137 l-153 -151 -3 426 -3 427 -349 349 -348 348 37 59 c78 121
+    221 235 350 278 99 32 122 35 245 32 105 -2 137 -7 198 -29z m-308 -1282 l0
+    -180 -295 295 -295 295 0 166 c0 91 3 169 7 173 4 4 137 -123 295 -281 l288
+    -288 0 -180z m0 -985 l0 -565 -147 147 c-88 87 -159 149 -174 153 -31 8 -83
+    -16 -93 -40 -3 -9 -6 -31 -6 -48 0 -27 27 -58 210 -242 l210 -211 0 -434 0
+    -435 -275 275 c-198 199 -280 288 -294 320 -20 44 -21 60 -21 1140 l0 1095
+    295 -295 295 -295 0 -565z m475 -780 l-295 -295 0 350 0 350 293 293 292 292
+    3 -347 2 -348 -295 -295z m279 -290 c-14 -36 -72 -100 -295 -325 l-279 -280 0
+    180 0 180 293 293 292 292 3 -147 c2 -119 -1 -157 -14 -193z" />
+          </g>
+        </svg>
+      </div>
+      <!-- Brand -->    
       <a class="navbar-brand" href="index.html">
         <svg class="navbar-brand-svg" viewBox="0 0 245 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
-          <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
+          <!-- <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
+          <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path> -->
+          <use xlink:href="#feather-icon" x="-110" y="15" height="4rem" />
           <text x="40" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" letter-spacing="-.025em" fill="currentColor">Feather.</text>
         </svg>
       </a>
@@ -62,16 +87,16 @@
               <span></span>
             </span>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="fab fa-github"></i> 
               <span class="d-xl-none ml-2">
                 Github
               </span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="https://twitter.com/Feather_Studio_" class="nav-link">
               <i class="fab fa-twitter"></i> 
               <span class="d-xl-none ml-2">
                 Twitter
@@ -79,7 +104,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="holotexturepack@gmail.com" class="nav-link">
               <i class="fab icon-envelope"></i> 
               <span class="d-xl-none ml-2">
                 E-Mail
@@ -91,13 +116,13 @@
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.html" data-i18n="navbar-home">
               首頁
             </a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-projects">
               專案計畫
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarPages">
@@ -138,7 +163,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-teams">
               團隊介紹
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarLandings">
@@ -158,13 +183,13 @@
           </li>
 
           <li class="nav-item ">
-            <a href="faq.html" class="nav-link">
+            <a href="faq.html" class="nav-link" data-i18n="navbar-faqs">
               常見問題
             </a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-functions">
               實驗性功能
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarLandings">
@@ -184,16 +209,16 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              語言切換
+              Language
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarLandings">
-              <a class="dropdown-item" href="#">
+            <div class="dropdown-menu switch-locale" aria-labelledby="navbarLandings">
+              <a class="dropdown-item" data-locale="en" href="#">
                 English
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" data-locale="ja" href="#">
                 日本語
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" data-locale="zh" href="#">
                 繁體中文
               </a>            
             </div>
@@ -223,7 +248,7 @@
     <!-- Content -->
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 pl-0 pr-0">
 
           <!-- Preheading -->
           <p class="font-weight-medium text-center text-xs text-uppercase text-white text-muted" data-toggle="animation"
@@ -233,13 +258,13 @@
 
           <!-- Heading -->
           <h1 class="text-center text-white mb-4" data-toggle="animation" data-animation="fadeUp"
-            data-animation-order="1" data-animation-trigger="load">
+            data-animation-order="1" data-animation-trigger="load" data-i18n="mcrp-holo5th-anniversity-title">
             Hololive五期生 一周年紀念材質包
           </h1>
 
           <!-- Subheading -->
           <p class="text-center text-white text-muted mb-5" data-toggle="animation" data-animation="fadeUp"
-            data-animation-order="2" data-animation-trigger="load">
+            data-animation-order="2" data-animation-trigger="load" data-i18n="mcrp-holo5th-anniversity-title-explain">
             本計畫是一個粉絲創作，是為了慶祝Hololive五期生出道一周年而製作的材質包。
           </p>
 
@@ -300,17 +325,21 @@
 
           <!-- Heading -->
           <h3 class="mb-4">
-            <span class="text-primary">Hololive五期生</span> 是誰?
+            <span class="text-primary" data-i18n="mcrp-holo5th-anniversity-intro-1">Hololive</span>
+            <span data-i18n="mcrp-holo5th-anniversity-intro-2">是什麼?</span>
+            <span class="text-primary" data-i18n="mcrp-holo5th-anniversity-intro-3">五期生</span>
+            <span data-i18n="mcrp-holo5th-anniversity-intro-4">又是誰?</span>
           </h3>
 
           <!-- Text -->
-          <p>
+          <p data-i18n="mcrp-holo5th-anniversity-intro-explain">
             Hololive production是日本科技公司COVER株式會社旗下的經紀公司品牌，以經營虛擬YouTuber為其主要業務。Hololive 五期生則是在2020年8月出道，今年則適逢一周年紀念。
           </p>
 
           <!-- Button -->
-          <a href="https://www.hololive.tv/member" class="btn btn-lg btn-outline-primary">
-            Hololive member
+          <a href="https://www.hololive.tv/member" class="btn btn-lg btn-outline-primary"
+            data-i18n="mcrp-holo5th-anniversity-official-link">
+            Hololive 官方介紹
           </a>
 
         </div>
@@ -338,20 +367,22 @@
 
           <!-- Heading -->
           <h3 class="mb-4">
-            為什麼要做這個 <span class="text-primary">材質包</span> ?
+            <span data-i18n="mcrp-holo5th-anniversity-goal-1">為什麼要做這個</span>
+            <span class="text-primary" data-i18n="mcrp-holo5th-anniversity-goal-2">材質包</span>
+            <span data-i18n="mcrp-holo5th-anniversity-goal-3">?</span>
           </h3>
 
           <!-- Text -->
-          <p>
+          <p data-i18n="mcrp-holo5th-anniversity-goal-explain-1">
             "Hololive五期生 一周年紀念材質包" 是一個由粉絲自主發起與製作，為了祝賀五期生成員出道一周年，而特意設計一套帶有五期生個人特色的材質包。
           </p>
-          <p>
+          <p data-i18n="mcrp-holo5th-anniversity-goal-explain-2">
             關於材質包的使用條件，遊戲版本必須是Minecraft Java Edition才能正常使用。並且需要安裝額外的光影模組"optifine"，安裝並不複雜，請參考後續的安裝教學。
-          </p>  
+          </p>
 
           <!-- Button -->
-          <a href="#testimonials" class="btn btn-outline-primary">
-            About optifine
+          <a href="#testimonials" class="btn btn-outline-primary" data-i18n="mcrp-holo5th-anniversity-optifine-link">
+            Optifine 官網
           </a>
 
         </div>
@@ -370,12 +401,12 @@
         <div class="col-md-8 col-lg-6">
 
           <!-- Heading -->
-          <h2 class="mb-4 text-center">
+          <h2 class="mb-4 text-center" data-i18n="mcrp-holo5th-anniversity-features">
             材質包特色
           </h2>
 
           <!-- Subheading -->
-          <p class="text-center text-muted text-left mb-5">
+          <p class="text-center text-muted text-left mb-5" data-i18n="mcrp-holo5th-anniversity-features-explain">
             本材質包融合了五期生至今的經歷，包含了人設、粉絲形象、事跡、體驗、梗...等各式各樣的種種。我們的目標，是製作一款讓五期生本人在日常配信中使用也不突兀、讓一般人在日常使用也能輕易聯想到對應人物的，有趣的材質包。
           </p>
 
@@ -393,13 +424,13 @@
             </div>
 
             <!-- Heading -->
-            <h4 class="text-center mb-3">
+            <h4 class="text-center mb-3" data-i18n="mcrp-holo5th-anniversity-features-1">
               個人特色
             </h4>
 
             <!-- Content -->
-            <p class="text-center text-muted mb-0">
-              我們研究五期生的人物設定、實況、周邊商品與Twitter等各式情報，以此為基礎在Minecraft中製作了如Ne子、大福君...等各種物品。<!-- 可以使用本材質包搭配出有如夏祭屋台的熱鬧感。 -->
+            <p class="text-center text-muted mb-0" data-i18n="mcrp-holo5th-anniversity-features-1-explain">
+              我們研究五期生的人物設定、實況、周邊商品與Twitter等各式情報，以此為基礎在Minecraft中製作了如Ne子、大福君...等各種物品。
             </p>
 
           </div>
@@ -416,13 +447,13 @@
             </div>
 
             <!-- Heading -->
-            <h4 class="text-center mb-3">
+            <h4 class="text-center mb-3" data-i18n="mcrp-holo5th-anniversity-features-2">
               五期生組合
             </h4>
 
             <!-- Content -->
-            <p class="text-center text-muted mb-0">
-              透過使用本材質包的物件，再加上一點建築巧思，可以做出各種主題場景，抑或是生草的現場。<!-- 本材質包內含了許多夏日祭典上常見的物品，包含團扇、蘋果糖、水球…等。 -->
+            <p class="text-center text-muted mb-0" data-i18n="mcrp-holo5th-anniversity-features-2-explain">
+              透過使用本材質包的物件，再加上一點建築巧思，可以做出各種主題場景，抑或是生草的現場。
             </p>
 
           </div>
@@ -439,13 +470,14 @@
             </div>
 
             <!-- Heading -->
-            <h4 class="text-center mb-3">
+            <h4 class="text-center mb-3" data-i18n="mcrp-holo5th-anniversity-features-3">
               材質包聯動
             </h4>
 
             <!-- Content -->
-            <p class="text-center text-muted mb-0">
-              配合我們的、或是月舞(其中一位成員)的其他作品，可以打造出更加豐富的Minecraft世界。<!-- 在維持Hololive成員於minecraft中的skin外觀下，依照各自的人設，製作了在minecraft中使用的附加裝備，如可可會長的角、尾巴以及翅膀，在遊戲中大幅還原了各個成員原本的人設。 -->
+            <p class="text-center text-muted mb-0" data-i18n="mcrp-holo5th-anniversity-features-3-explain">
+              配合我們的、或是月舞(其中一位成員)的其他作品，可以打造出更加豐富的Minecraft世界。
+              <!-- 在維持Hololive成員於minecraft中的skin外觀下，依照各自的人設，製作了在minecraft中使用的附加裝備，如可可會長的角、尾巴以及翅膀，在遊戲中大幅還原了各個成員原本的人設。 -->
             </p>
 
           </div>
@@ -470,12 +502,12 @@
         <div class="col-12 col-md-8 col-lg-6">
 
           <!-- Heading -->
-          <h2 class="mb-4 text-center">
+          <h2 class="mb-4 text-center" data-i18n="mcrp-holo5th-anniversity-catlog">
             物品分類
           </h2>
 
           <!-- Subheading -->
-          <p class="mb-5 text-center text-muted">
+          <p class="mb-5 text-center text-muted" data-i18n="mcrp-holo5th-anniversity-catlog-explain">
             這邊介紹本材質包所修改的物品，以及其對應的原始方塊或物品材質。
           </p>
 
@@ -522,7 +554,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Blue Axolotl(Lamy Bucket).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -530,7 +562,34 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        菈米桶
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <hr>
+                  
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/Pufferfish(lamy Saka).png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        雪夜月
                       </h5>
 
                       <!-- Text -->
@@ -552,7 +611,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/snowgolem(daifuku).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -560,7 +619,7 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        大福
                       </h5>
 
                       <!-- Text -->
@@ -587,7 +646,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Carrot.png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -595,7 +654,7 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        Ne子
                       </h5>
 
                       <!-- Text -->
@@ -605,6 +664,34 @@
 
                     </div>
                   </div> <!-- / .row -->
+
+                  <hr>
+
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/Carrot Farmland.png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        Ne田
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
 
                   <hr class="d-md-none">
 
@@ -617,7 +704,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Egg(NeneTomato).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -625,7 +712,7 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        番茄
                       </h5>
 
                       <!-- Text -->
@@ -652,7 +739,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/botan_car(pumpkinhead).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -660,7 +747,61 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        推車裡的獅白牡丹
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <hr>
+
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/Chest_minecart(446WTM).png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        獅白牡丹與移動式成吉思汗
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <hr>
+
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/minecraft.png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        購物車型雲霄飛車
                       </h5>
 
                       <!-- Text -->
@@ -682,7 +823,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Composter(Ramen Pot).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -690,7 +831,61 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        麵屋牡丹的招牌拉麵
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <hr>
+
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/creeper_head(SSRB).png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        SSRB
+                      </h5>
+
+                      <!-- Text -->
+                      <p class="mb-0 text-sm text-muted">
+                        素材：遊戲內對應素材名稱（素材英文名稱）
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <hr>
+
+                  <!-- Item -->
+                  <div class="row align-items-center">
+                    <div class="col-4 col-lg-3">
+
+                      <!-- Image -->
+                      <div class="img-square">
+                        <img src="assets/img/project-5thAnniversary/items/snowball.png" alt="..." class="img-cover">
+                      </div>
+
+                    </div>
+                    <div class="col ml-n4">
+
+                      <!-- Heading -->
+                      <h5>
+                        446手榴彈(手榴弾型ぽい)
                       </h5>
 
                       <!-- Text -->
@@ -717,7 +912,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Fox(ormaruza).png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -725,7 +920,7 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        座員
                       </h5>
 
                       <!-- Text -->
@@ -747,7 +942,7 @@
 
                       <!-- Image -->
                       <div class="img-square">
-                        <img src="assets/img/test/100x100.png" alt="..." class="img-cover">
+                        <img src="assets/img/project-5thAnniversary/items/Polka_ahoge.png" alt="..." class="img-cover">
                       </div>
 
                     </div>
@@ -755,7 +950,7 @@
 
                       <!-- Heading -->
                       <h5>
-                        物品名稱
+                        Polka扇
                       </h5>
 
                       <!-- Text -->
@@ -805,28 +1000,33 @@
         <div class="col-md-6 col-lg-4 offset-lg-1 order-md-1">
 
           <!-- Heading -->
-          <h2 class="mb-4">
+          <h2 class="mb-4" data-i18n="mcrp-holo5th-anniversity-download">
             DOWNLOADS
           </h2>
 
           <!-- Content -->
           <ul class="list-iconed text-muted">
-            <li class="list-iconed-item">
+            <li class="list-iconed-item" data-i18n="mcrp-holo5th-anniversity-mc-version">
               Minecraft Version：Java Edition v1.17
             </li>
             <li class="list-iconed-item">
-              Texture Pack Version：1.5
+              <span data-i18n="mcrp-holo5th-anniversity-texture-version">Texture Pack Version：</span>
+              <span>1.5</span>
             </li>
             <li class="list-iconed-item">
-              Release Date：2021/08/25
+              <span data-i18n="mcrp-holo5th-anniversity-release-date">Date：</span>
+              <span>2021/08/25</span>
             </li>
             <li class="list-iconed-item">
-              Optifine Required：Yes (<a href="https://optifine.net/downloads">official</a>)
+              <span data-i18n="mcrp-holo5th-anniversity-optifine-required-1">Required：Yes</span>
+              <a href="https://optifine.net/downloads" data-i18n="mcrp-holo5th-anniversity-optifine-required-2">
+                (official)</a>
             </li>
           </ul>
 
           <!-- Button -->
-          <a href="assets/resourcepacks/1.17holo-5thGenAnni1.5.zip" class="btn btn-outline-primary" download>
+          <a href="assets/resourcepacks/1.17holo-5thGenAnni1.5.zip" class="btn btn-outline-primary"
+            data-i18n="mcrp-holo5th-anniversity-download-link" download>
             Download Link
           </a>
 
@@ -858,12 +1058,12 @@
         <div class="col-md-8 col-lg-6">
 
           <!-- Heading -->
-          <h2 class="text-center mb-4">
-            Scenes
+          <h2 class="text-center mb-4" data-i18n="mcrp-holo5th-anniversity-scenes">
+            遊戲畫面
           </h2>
 
           <!-- Subheading -->
-          <p class="text-center text-muted mb-5">
+          <p class="text-center text-muted mb-5" data-i18n="mcrp-holo5th-anniversity-scenes-explain">
             場景拍攝感謝月舞協助。
           </p>
 
@@ -873,7 +1073,8 @@
         <div class="col">
 
           <!-- Slider -->
-          <div class="slider slider-no-controls mb-3" data-bind="slider" data-target="#sliderGallerySmall" id="sliderGalleryLarge">
+          <div class="slider slider-no-controls mb-3" data-bind="slider" data-target="#sliderGallerySmall"
+            id="sliderGalleryLarge">
             <div class="slider-item">
 
               <!-- Image -->
@@ -942,7 +1143,8 @@
         <div class="col">
 
           <!-- Slider -->
-          <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge" id="sliderGallerySmall">
+          <div class="slider slider-highlight" data-bind="slider" data-target="#sliderGalleryLarge"
+            id="sliderGallerySmall">
             <div class="slider-item col-6 col-md-3">
 
               <!-- Image -->
@@ -1117,6 +1319,19 @@
 
   <!-- Theme JS -->
   <script src="assets/js/theme.min.js"></script>
+
+  <!-- i18n releated JS -->
+  <script src="assets/libs/@wikimedia/jquery.i18n/libs/CLDRPluralRuleParser/src/CLDRPluralRuleParser.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.language.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.parser.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.js"></script>
+  <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.bidi.js"></script>
+  <script src="assets/libs/historyjs/scripts/bundled/html4+html5/jquery.history.js"></script>
+  <script src="assets/libs/js-url/url.min.js"></script>
+  <script src="assets/js/global_languages.js"></script>
 
 </body>
 

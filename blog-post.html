@@ -36,11 +36,36 @@
     <nav class="navbar navbar-expand-xl navbar-light  fixed-top">
       <div class="container">
 
-        <!-- Brand -->
+        <!-- Temp svg -->
+        <div style="display:none" >
+          <svg id="feather-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+              <path d="M2410 5114 c-14 -3 -56 -15 -95 -26 -239 -70 -446 -256 -543 -490
+      -65 -157 -63 -88 -60 -1633 l3 -1400 29 -65 c27 -59 62 -98 378 -415 l348
+      -351 0 -319 c0 -330 6 -387 40 -405 24 -13 76 -13 100 0 34 18 40 75 40 405
+      l0 319 348 351 c316 317 351 356 378 415 l29 65 3 1400 c2 1252 1 1408 -14
+      1480 -60 301 -286 549 -589 645 -56 18 -99 23 -220 25 -82 2 -161 1 -175 -1z
+      m368 -197 c201 -72 354 -225 430 -429 l27 -73 3 -655 2 -655 -295 -295 -295
+      -295 0 135 0 134 210 211 c183 184 210 215 210 242 0 45 -9 62 -41 78 -55 29
+      -65 22 -225 -137 l-153 -151 -3 426 -3 427 -349 349 -348 348 37 59 c78 121
+      221 235 350 278 99 32 122 35 245 32 105 -2 137 -7 198 -29z m-308 -1282 l0
+      -180 -295 295 -295 295 0 166 c0 91 3 169 7 173 4 4 137 -123 295 -281 l288
+      -288 0 -180z m0 -985 l0 -565 -147 147 c-88 87 -159 149 -174 153 -31 8 -83
+      -16 -93 -40 -3 -9 -6 -31 -6 -48 0 -27 27 -58 210 -242 l210 -211 0 -434 0
+      -435 -275 275 c-198 199 -280 288 -294 320 -20 44 -21 60 -21 1140 l0 1095
+      295 -295 295 -295 0 -565z m475 -780 l-295 -295 0 350 0 350 293 293 292 292
+      3 -347 2 -348 -295 -295z m279 -290 c-14 -36 -72 -100 -295 -325 l-279 -280 0
+      180 0 180 293 293 292 292 3 -147 c2 -119 -1 -157 -14 -193z" />
+            </g>
+          </svg>
+        </div>
+        <!-- Brand -->    
         <a class="navbar-brand" href="index.html">
           <svg class="navbar-brand-svg" viewBox="0 0 245 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
-            <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
+            <!-- <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
+            <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path> -->
+            <use xlink:href="#feather-icon" x="-110" y="15" height="4rem" />
             <text x="40" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" letter-spacing="-.025em" fill="currentColor">Feather.</text>
           </svg>
         </a>
@@ -60,16 +85,16 @@
                 <span></span>
               </span>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="fab fa-github"></i> 
                 <span class="d-xl-none ml-2">
                   Github
                 </span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="https://twitter.com/Feather_Studio_" class="nav-link">
                 <i class="fab fa-twitter"></i> 
                 <span class="d-xl-none ml-2">
                   Twitter
@@ -77,7 +102,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="holotexturepack@gmail.com" class="nav-link">
                 <i class="fab icon-envelope"></i> 
                 <span class="d-xl-none ml-2">
                   E-Mail
@@ -89,13 +114,13 @@
           <!-- Links -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="index.html" data-i18n="navbar-home">
                 首頁
               </a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-projects">
                 專案計畫
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarPages">
@@ -136,7 +161,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-teams">
                 團隊介紹
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarLandings">
@@ -156,13 +181,13 @@
             </li>
 
             <li class="nav-item ">
-              <a href="faq.html" class="nav-link">
+              <a href="faq.html" class="nav-link" data-i18n="navbar-faqs">
                 常見問題
               </a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="navbar-functions">
                 實驗性功能
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarLandings">
@@ -182,16 +207,16 @@
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                語言切換
+                Language
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarLandings">
-                <a class="dropdown-item" href="#">
+              <div class="dropdown-menu switch-locale" aria-labelledby="navbarLandings">
+                <a class="dropdown-item" data-locale="en" href="#">
                   English
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" data-locale="ja" href="#">
                   日本語
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" data-locale="zh" href="#">
                   繁體中文
                 </a>            
               </div>
@@ -637,6 +662,19 @@
 
     <!-- Theme JS -->
     <script src="assets/js/theme.min.js"></script>
+
+    <!-- i18n releated JS -->
+    <script src="assets/libs/@wikimedia/jquery.i18n/libs/CLDRPluralRuleParser/src/CLDRPluralRuleParser.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.language.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.parser.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.js"></script>
+    <script src="assets/libs/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.bidi.js"></script>
+    <script src="assets/libs/historyjs/scripts/bundled/html4+html5/jquery.history.js"></script>
+    <script src="assets/libs/js-url/url.min.js"></script>
+    <script src="assets/js/global_languages.js"></script>
 
   </body>
 </html>
