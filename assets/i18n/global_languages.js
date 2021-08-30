@@ -16,9 +16,9 @@ var set_locale_to = function (locale) {
 
 jQuery(function () {
     $.i18n().load({
-        'en': './assets/languages/en.json',
-        'zh': './assets/languages/zh.json',
-        'ja': './assets/languages/ja.json'
+        'en': './assets/i18n/languages/en.json',
+        'zh': './assets/i18n/languages/zh.json',
+        'ja': './assets/i18n/languages/ja.json'
     }).done(function () {
         set_locale_to(url('?locale'));
         
