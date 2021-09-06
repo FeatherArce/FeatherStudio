@@ -1,3 +1,5 @@
+const _version = '20210907';
+
 var set_locale_to = function (locale) {
     console.log('locale: ', locale);
     // 從sessionStorage取得之前存的資料
@@ -6,9 +8,9 @@ var set_locale_to = function (locale) {
     let storageData = localStorage.getItem('locale');
     console.log('storage: ', storageData);
     if (locale) {
-        $.i18n().locale = locale;            
+        $.i18n().locale = locale;
     } else if (storageData) {
-        $.i18n().locale = storageData;            
+        $.i18n().locale = storageData;
     }
     $('body').i18n();
     //$('#welcome').text($.i18n('welcome', 'HACHI'));
@@ -16,17 +18,17 @@ var set_locale_to = function (locale) {
 
 jQuery(function () {
     $.i18n().load({
-        'en': './assets/i18n/languages/en.json',
-        'zh': './assets/i18n/languages/zh.json',
-        'ja': './assets/i18n/languages/ja.json'
+        'en': './assets/i18n/languages/' + _version + '/en.json',
+        'zh': './assets/i18n/languages/' + _version + '/zh.json',
+        'ja': './assets/i18n/languages/' + _version + '/ja.json'
     }).done(function () {
         set_locale_to(url('?locale'));
-        
-        History.Adapter.bind(window, 'statechange', function () {            
+
+        History.Adapter.bind(window, 'statechange', function () {
             let locale = url('?locale');
             //sessionStorage.setItem('locale', locale);
             localStorage.setItem('locale', locale);
-            set_locale_to(locale);            
+            set_locale_to(locale);
         });
 
         $('.switch-locale').on('click', 'a', function (e) {
