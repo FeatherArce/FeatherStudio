@@ -1,4 +1,4 @@
-const _version = '20210907';
+const _version = '20211016';
 
 var set_locale_to = function (locale) {
     console.log('locale: ', locale);
